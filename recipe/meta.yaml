@@ -14,6 +14,7 @@ requirements:
 
 outputs:
   - name: eman-deps-cli
+    script: copy-activation-script.sh
     requirements:
       run:
         - msinttypes                        # [win]
@@ -46,6 +47,7 @@ outputs:
         - configparser
         - tqdm
         - libcxx         4.0.1  h579ed51_0  # [osx]
+        - {{ compiler('cxx') }}
 
       run_constrained:
         - cmake          3.14.*

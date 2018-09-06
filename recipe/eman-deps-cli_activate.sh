@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 echo
-echo "INFO: eman-deps activation script is making the following environmental changes:"
+echo "INFO: eman-deps-cli activation script is making the following environmental changes:"
 
 set -x
 
