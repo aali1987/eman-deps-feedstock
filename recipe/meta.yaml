@@ -20,7 +20,7 @@ requirements:
             "jpeg",
             "libtiff 4.0.9",             # [not win]
             "libtiff 4.0.9 hafacce9_0",  # [win]
-            "libpng 1.6.34",
+            "libpng",
             "zlib",
             "matplotlib",
             "scipy 1.*",
