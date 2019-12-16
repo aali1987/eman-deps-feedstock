@@ -1,5 +1,5 @@
 package:
-    name: eman-deps
+    name: eman-deps-dev
     version: '16.0'
 
 build:
@@ -8,11 +8,18 @@ build:
 
 requirements:
     run:
+      - {{ pin_subpackage('eman-deps', exact=True) }}
+      - cmake            3.14.*
+      - boost            1.66.*
+
+outputs:
+  - name: eman-deps
+    requirements:
+      run:
         - {{ pin_subpackage('eman-deps-cli', exact=True) }}
         - pyqt           5.*
         - pyopengl       3.1.0
 
-outputs:
   - name: eman-deps-cli
     requirements:
       run:
