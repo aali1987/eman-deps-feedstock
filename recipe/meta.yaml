@@ -15,6 +15,7 @@ requirements:
 test:
     requires:
       - eman-dev 2.31
+      - libglu      # [linux]
     commands:
       - bash $PREFIX/tests/run_tests.sh     # [not win]
       - call %PREFIX%\tests\run_tests.bat    # [win]
