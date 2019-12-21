@@ -14,7 +14,7 @@ requirements:
 
 test:
     requires:
-      - eman-dev
+      - eman-dev 2.31
     commands:
       - bash $PREFIX/tests/run_tests.sh     # [not win]
       - call %PREFIX%\tests\run_tests.bat    # [win]
