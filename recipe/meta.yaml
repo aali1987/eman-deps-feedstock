@@ -58,6 +58,7 @@ outputs:
     test:
       requires:
         - eman-dev 2.31
+        - boost 1.66.*
       commands:
         - bash $PREFIX/tests/run_tests.sh     # [not win]
         - call %PREFIX%\tests\run_tests.bat    # [win]
