@@ -12,6 +12,13 @@ requirements:
       - cmake            3.14.*
       - boost            1.66.*
 
+test:
+    requires:
+      - eman-dev 2.31
+    commands:
+      - bash $PREFIX/tests/run_tests.sh     # [not win]
+      - call %PREFIX%\tests\run_tests.bat    # [win]
+
 outputs:
   - name: eman-deps
     requirements:
@@ -54,14 +61,6 @@ outputs:
         - cmake          3.14.*
         - conda          4.6.14
         - conda-build    3.17.8
-
-    test:
-      requires:
-        - eman-dev 2.31
-        - boost 1.66.*
-      commands:
-        - bash $PREFIX/tests/run_tests.sh     # [not win]
-        - call %PREFIX%\tests\run_tests.bat    # [win]
 
 about:
   summary: Meta-package for eman2 dependencies
