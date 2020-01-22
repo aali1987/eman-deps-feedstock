@@ -23,18 +23,7 @@ outputs:
   - name: eman-deps-cli
     requirements:
       run:
-        - python         3.6.*
-        - boost
-        - fftw           3.3.8  nompi_*     # [win]
-        - numpy          1.13.*
-        - ftgl
-        - freetype
-        - gsl            2.4.*
-        - hdf5           1.8.18
-        - jpeg
-        - libtiff        4.0.9
-        - libpng         1.6.37
-        - zlib
+        - {{ pin_subpackage('eman-deps-cxx', exact=True) }}
         - matplotlib    >3.0.0
         - scipy          1.*
         - ipython
@@ -50,6 +39,22 @@ outputs:
         - cmake          3.14.*
         - conda          4.6.14
         - conda-build    3.17.8
+
+  - name: eman-deps-cxx
+    requirements:
+      run:
+        - python         3.6.*
+        - boost
+        - fftw           3.3.8  nompi_*     # [win]
+        - numpy          1.13.*
+        - ftgl
+        - freetype
+        - gsl            2.4.*
+        - hdf5           1.8.18
+        - jpeg
+        - libtiff        4.0.9
+        - libpng         1.6.37
+        - zlib
 
 about:
   summary: Meta-package for eman2 dependencies
