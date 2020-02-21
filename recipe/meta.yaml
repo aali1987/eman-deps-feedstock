@@ -34,6 +34,7 @@ outputs:
         - scikit-learn
         - bsddb3                            # [not win]
         - pydusa         1.15 numpy{{ numpy_ver }}_15   # [not win]
+        - openmpi-mpicxx                                # [not win]
         - nose
         - future
         - configparser
