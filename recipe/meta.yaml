@@ -40,6 +40,7 @@ outputs:
         - tqdm
 
   - name: eman-deps-cxx
+    script: copy_activation_script.sh
     requirements:
       run:
         - python         3.7.*
