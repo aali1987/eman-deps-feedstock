@@ -3,7 +3,7 @@ package:
     version: '16.1'
 
 build:
-    number: 3
+    number: 4
     skip: True  # [win32]
 
 requirements:
@@ -28,7 +28,7 @@ requirements:
         - scipy          1.*
         - ipython
         - tensorflow-gpu 1.5.*              # [linux]
-        - cudatoolkit    8.0.*              # [linux]
+        - cudatoolkit                       # [linux]
         - cudnn          7.0.*              # [linux]
         - tensorflow     1.5.*              # [osx]
         - scikit-learn   0.19.*
