@@ -37,7 +37,7 @@ outputs:
         - cudnn                             # [linux]
         - tensorflow     2.*                # [osx]
         - bsddb3
-        - pydusa         1.15 *_17           # [not win]
+        - pydusa         1.15 *_17          # [not win]
         - nose
         - future
         - configparser
