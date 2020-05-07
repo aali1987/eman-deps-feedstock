@@ -58,6 +58,9 @@ outputs:
         - libtiff        4.0.9
         - libpng         1.6.37
         - zlib
+      
+      run_constrained:
+        - openmpi 3.*
 
 about:
   summary: Meta-package for eman2 dependencies
